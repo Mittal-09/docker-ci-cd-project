@@ -23,7 +23,7 @@ jobs:
         run: docker build -t my-flask-app .
 
       - name: Run Docker container
-        run: docker run -d -p 5000:5000 --name test-container my-flask-app
+        run:  docker run -d -p 5000:5000 --name test-container my-flask-app
 
       - name: Test application
         run: |
